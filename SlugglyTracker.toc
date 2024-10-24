@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: SlugglyTracker
+## Notes: Tracks auras on nameplates.
+## Author: Sluggly
+## Version: 1.0
+## SavedVariables: SlugglyTracker_SavedVariables
+
+SlugglyTracker.lua
