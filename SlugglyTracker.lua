@@ -265,36 +265,42 @@ SlugglyTracker.hardcodedSpells = {
     86401,  -- Alter Time
     22812,  -- Barkskin -- Not Verified
     19574,  -- Bestial Wrath -- Not Verified
+    954516,  -- Blood Horror -- Not Verified
     31224,  -- Cloak of Shadows
     86378,  -- Combat Readiness -- Not Verified
-    19263,  -- Deterrence -- Not Verified
+    19263,  -- Deterrence
     47585,  -- Dispersion
     286266, -- Divine Infusion
     498,    -- Divine Protection
     642,    -- Divine Shield
-    5277,   -- Evasion -- Not Verified
+    26669,   -- Evasion
     47788,   -- Guardian Spirit -- Not Verified
     1044,   -- Hand of Freedom -- Not Verified
     1022,   -- Hand of Protection -- Not Verified
-    45438,  -- Ice Block -- Not Verified
+    45438,  -- Ice Block
     12976,  -- Last Stand
+    16689,  -- Nature's Grasp
     33206,  -- Pain Suppression -- Not Verified
+    20230,  -- Retaliation
+    273990, -- Shadow Counter -- Not Verified
+    2565,    -- Shield Block
     871,    -- Shield Wall -- Not Verified
     954533, -- Smoke Bomb
     23920,  -- Spell Reflection -- Not Verified
     11305,  -- Sprint
+    27239,  -- Master Soulstone
     61336,  -- Survival Instinct -- Not Verified
-    283386, -- Temporal Shield -- Not Verified
-    954512, -- Unending Resolve -- Not Verified
+    283386, -- Temporal Shield
+    954512, -- Unending Resolve
 
     -- Offensives
-    13750, -- Adrenaline Rush -- Not Verified
+    13750, -- Adrenaline Rush
     954831, -- Air Ascendance -- Not Verified
-    12042, -- Arcane Power -- Not Verified
+    12042, -- Arcane Power
     886380, -- Avatar
     31884, -- Avenging Wrath -- Not Verified
     901026, -- Bloodbath
-    11129, -- Combustion -- Not Verified
+    28682, -- Combustion
     812292, -- Death Wish -- Not Verified
     760000, -- Flame Ascendance -- Not Verified
     14204, -- Enrage Talent
@@ -308,13 +314,20 @@ SlugglyTracker.hardcodedSpells = {
     51713, -- Shadow Dance
     86395, -- Soul Harvest -- Not Verified
 
-    -- Main Stats
-    ---1, -- Strength -- Not Verified
-    ---1, -- Agility -- Not Verified
-    ---1, -- Intelligence -- Not Verified
-    ---1, -- Spirit -- Not Verified
+    -- Stances
+    25780, -- Righteous Fury
+    , -- Defensive Stance
+    , -- Manaforged-Barrier
+    275585, -- Dark Apotheosis
+    , -- Bear Form
 
-    -- Crodw Controls
+    -- Main Stats
+    ---1, -- Strength
+    ---1, -- Agility
+    ---1, -- Intelligence
+    ---1, -- Spirit
+
+    -- Crowd Controls
 
 }
 
