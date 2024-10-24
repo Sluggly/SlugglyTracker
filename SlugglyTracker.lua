@@ -19,6 +19,11 @@ local trackerFrame = CreateFrame("Frame")
 -- Function to initialize the addon
 function SlugglyTracker:Initialize()
     self:LoadSavedVariables()
+    -- Check if trackedSpells is empty and fill it if needed
+    if self:IsTrackedSpellsEmpty() then
+        print("SlugglyTracker: Tracked spell list is empty. Loading hardcoded spell list.")
+        self:FillTrackedSpells()
+    end
     trackerFrame:RegisterEvent("NAME_PLATE_UNIT_ADDED")
     trackerFrame:RegisterEvent("NAME_PLATE_UNIT_REMOVED")
     trackerFrame:RegisterEvent("UNIT_AURA")
@@ -256,12 +261,61 @@ SLASH_SLUGGLYTRACKERCONSOLE1 = '/stconsole'
 SlashCmdList["SLUGGLYTRACKERCONSOLE"] = function() SlugglyTracker:ChangeDebug() end
 
 SlugglyTracker.hardcodedSpells = {
-    12345,  -- Replace with actual spell IDs
-    67890,
-    11223,
-    44556,
-    78901
-    -- Add as many spell IDs as needed
+    -- Defensives
+    86401,  -- Alter Time
+    22812,  -- Barkskin -- Not Verified
+    19574,  -- Bestial Wrath -- Not Verified
+    31224,  -- Cloak of Shadows
+    86378,  -- Combat Readiness -- Not Verified
+    19263,  -- Deterrence -- Not Verified
+    47585,  -- Dispersion
+    286266, -- Divine Infusion
+    498,    -- Divine Protection
+    642,    -- Divine Shield
+    5277,   -- Evasion -- Not Verified
+    47788,   -- Guardian Spirit -- Not Verified
+    1044,   -- Hand of Freedom -- Not Verified
+    1022,   -- Hand of Protection -- Not Verified
+    45438,  -- Ice Block -- Not Verified
+    12976,  -- Last Stand
+    33206,  -- Pain Suppression -- Not Verified
+    871,    -- Shield Wall -- Not Verified
+    954533, -- Smoke Bomb
+    23920,  -- Spell Reflection -- Not Verified
+    11305,  -- Sprint
+    61336,  -- Survival Instinct -- Not Verified
+    283386, -- Temporal Shield -- Not Verified
+    954512, -- Unending Resolve -- Not Verified
+
+    -- Offensives
+    13750, -- Adrenaline Rush -- Not Verified
+    954831, -- Air Ascendance -- Not Verified
+    12042, -- Arcane Power -- Not Verified
+    886380, -- Avatar
+    31884, -- Avenging Wrath -- Not Verified
+    901026, -- Bloodbath
+    11129, -- Combustion -- Not Verified
+    812292, -- Death Wish -- Not Verified
+    760000, -- Flame Ascendance -- Not Verified
+    14204, -- Enrage Talent
+    275915, -- Gurubashi Rage
+    63848, -- Hunger for Blood
+    12472, -- Icy Veins -- Not Verified
+    31666, -- Master of Subtlety Talent
+    10060, -- Power Infusion -- Not Verified
+    3045, -- Rapid Fire -- Not Verified
+    1719, -- Recklessness -- Not Verified
+    51713, -- Shadow Dance
+    86395, -- Soul Harvest -- Not Verified
+
+    -- Main Stats
+    ---1, -- Strength -- Not Verified
+    ---1, -- Agility -- Not Verified
+    ---1, -- Intelligence -- Not Verified
+    ---1, -- Spirit -- Not Verified
+
+    -- Crodw Controls
+
 }
 
 SLASH_SLUGGLYTRACKERFILL1 = '/stfill'
@@ -273,4 +327,8 @@ function SlugglyTracker:FillTrackedSpells()
     end
     self:SaveVariables()
     print("SlugglyTracker: Filled tracked spells with predefined spell IDs.")
+end
+
+function SlugglyTracker:IsTrackedSpellsEmpty()
+    return next(self.trackedSpells) == nil
 end
