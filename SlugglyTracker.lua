@@ -263,18 +263,18 @@ SlashCmdList["SLUGGLYTRACKERCONSOLE"] = function() SlugglyTracker:ChangeDebug() 
 SlugglyTracker.hardcodedSpells = {
     -- Defensives
     86401,  -- Alter Time
-    22812,  -- Barkskin -- Not Verified
-    19574,  -- Bestial Wrath -- Not Verified
+    22812,  -- Barkskin
+    19574,  -- Bestial Wrath
     954516,  -- Blood Horror -- Not Verified
     31224,  -- Cloak of Shadows
-    86378,  -- Combat Readiness -- Not Verified
+    86378,  -- Combat Readiness
     19263,  -- Deterrence
     47585,  -- Dispersion
     286266, -- Divine Infusion
     498,    -- Divine Protection
     642,    -- Divine Shield
     26669,   -- Evasion
-    47788,   -- Guardian Spirit -- Not Verified
+    47788,   -- Guardian Spirit
     1044,   -- Hand of Freedom -- Not Verified
     1022,   -- Hand of Protection -- Not Verified
     45438,  -- Ice Block
@@ -284,7 +284,7 @@ SlugglyTracker.hardcodedSpells = {
     20230,  -- Retaliation
     273990, -- Shadow Counter -- Not Verified
     2565,    -- Shield Block
-    871,    -- Shield Wall -- Not Verified
+    871,    -- Shield Wall
     954533, -- Smoke Bomb
     23920,  -- Spell Reflection -- Not Verified
     11305,  -- Sprint
@@ -306,20 +306,20 @@ SlugglyTracker.hardcodedSpells = {
     14204, -- Enrage Talent
     275915, -- Gurubashi Rage
     63848, -- Hunger for Blood
-    12472, -- Icy Veins -- Not Verified
+    12472, -- Icy Veins
     31666, -- Master of Subtlety Talent
     10060, -- Power Infusion -- Not Verified
-    3045, -- Rapid Fire -- Not Verified
+    3045, -- Rapid Fire
     1719, -- Recklessness -- Not Verified
     51713, -- Shadow Dance
     86395, -- Soul Harvest -- Not Verified
 
     -- Stances
     25780, -- Righteous Fury
-    , -- Defensive Stance
-    , -- Manaforged-Barrier
-    275585, -- Dark Apotheosis
-    , -- Bear Form
+    --, -- Defensive Stance
+    --, -- Manaforged-Barrier
+    275585 -- Dark Apotheosis
+    --, -- Bear Form
 
     -- Main Stats
     ---1, -- Strength
