@@ -319,7 +319,7 @@ SlugglyTracker.hardcodedSpells = {
     --, -- Defensive Stance
     --, -- Manaforged-Barrier
     275585 -- Dark Apotheosis
-    --, -- Bear Form
+    9634, -- Bear Form
 
     -- Main Stats
     ---1, -- Strength
